@@ -51,6 +51,8 @@ html lang="ru"
           li.divider
           li: a href="#sponsors" Спонсоры
           li.divider
+          li: a href="#disqus" Обсуждение
+          li.divider
     br
     br
     .row#why
@@ -93,7 +95,7 @@ html lang="ru"
         .panel.callout
           h1.subheader.text-centered
             'На данный момент собрано:
-            strong<> 121&nbsp;000&nbsp;руб.
+            strong<> 127&nbsp;013&nbsp;руб.
         br
         .section-container.vertical-tabs data-section="vertical-tabs"
           section.active
@@ -138,6 +140,7 @@ html lang="ru"
                 |(
                 a href="mailto:sinodov@roem.ru" sinodov@roem.ru
                 ', +7&nbsp;(926)&nbsp;886-98-83)
+          small Комиссии платёжных систем будут учтены при определении итогового размера призового фонда
 
     .row#how
       .small-12.columns
@@ -181,12 +184,49 @@ html lang="ru"
           a<> href="http://vk.com/levmorozov" vk.com/levmorozov
           '/ Разработчик ряда малоизвестных владимирских проектов
         h5.subheader
+          strong<> 3 000 руб. –
+          a<> href="http://vk.com/lipin" Николай Липин
+          '/ CTO компании
+          a href="http://starislandgames.com/" StarIslandGames
+        h5.subheader
+          strong<> 2 013 руб. –
+          a<> href="http://vk.com/ivbeg" Иван Бегтин
+          '/ Директор
+          a href="http://infoculture.ru/" НП "Инфокультура"
+        h5.subheader
           strong<> 1 000 руб. –
           a<> href="http://vk.com/phil" Евгений Трифонов
           '/
           a<> href="http://vk.com/gadgettake" vk.com/gadgettake
           'и
           a<> href="http://vk.com/appletake" vk.com/appletake
+        h5.subheader
+          strong<> 1 000 руб. –
+          a<> href="" Alter Ego
+          '/ Анонимные спонсоры (пожалуйста, напишите на
+          a href="mailto:sinodov@roem.ru" sinodov@roem.ru
+          |, если вы хотите, чтобы ваш существенный вклад был деанонимизирован
+    br
+    .row#disqus
+      .small-12.columns
+        h3.subheader Обсуждение
+        #disqus_thread
+        javascript:
+          var disqus_shortname = 'parcelroemru'; // required: replace example with your forum shortname
+
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+
+        noscript
+          'Please enable JavaScript to view the
+          a<> href="http://disqus.com/?ref_noscript" comments powered by Disqus.
+        small.right: a.dsq-brlink href="http://disqus.com"
+          'comments powered by
+          span.logo-disqus Disqus
+
     hr
     footer.row
       .large-6.small-12.columns: small.hide-for-small
@@ -209,6 +249,3 @@ html lang="ru"
       $(document).foundation();
       (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter22481056 = new Ya.Metrika({id:22481056, clickmap:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
     noscript: div: img src="http://mc.yandex.ru/watch/22481056" style="position:absolute; left:-9999px;" alt=""
-
-
-
