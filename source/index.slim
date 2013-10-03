@@ -1,0 +1,214 @@
+html lang="ru"
+  head
+    meta charset="utf-8"
+    title Parcel :: Конкурс на разработку мессенджера MTProto для Mac
+    meta property="description" content="Разработай мессенджер MTProto для Mac OS X и выиграй конкурс"
+
+    link rel="image_src" href="http://parcel.roem.ru/blank_imac.png"
+
+    meta name="viewport" content="width=device-width"
+    link type="text/css" rel="stylesheet" href="http://cdn.jsdelivr.net/foundation/4.3.2/css/normalize.css"
+    link type="text/css" rel="stylesheet" href="http://cdn.jsdelivr.net/foundation/4.3.2/css/foundation.min.css"
+
+    script type="text/javascript" src="http://cdn.jsdelivr.net/foundation/4.3.2/js/vendor/custom.modernizr.js"
+
+    sass:
+      body
+        -webkit-font-smoothing: antialiased
+        font-smoothing: antialiased
+      .text-centered
+        text-align: center
+      .overhidden
+        overflow: hidden
+  body
+    script type="text/javascript" src="http://vk.com/js/api/openapi.js?101"
+    #fb-root
+    javascript:
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "http://connect.facebook.net/ru_RU/all.js#xfbml=1&appId=415054961924378";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+      VK.init({apiId: 3911613, onlyWidgets: true});
+    nav.top-bar#navigation
+      ul.title-area
+        li.name: h1: a href="/" Parcel
+        li.toggle-topbar.menu-icon: a href="#": span: Menu
+      section.top-bar-section
+        ul.left
+          li: a Конкурс на разработку мессенджера MTProto для Mac
+          li.divider
+        ul.right
+          li.divider
+          li: a href="#why" Зачем?
+          li.divider
+          li: a href="#backup" Помочь!
+          li.divider
+          li: a href="#how" Условия
+          li.divider
+          li: a href="#sponsors" Спонсоры
+          li.divider
+    br
+    br
+    .row#why
+      .small-12.large-5.columns
+        .image
+          image src="blank_imac.png" alt="Картинка с iMac"
+        br
+        a.button.large.expand.success href="#backup" Хочу помочь материально!
+      .small-12.large-6.large-offset-1.columns
+        h3.subheader Зачем?
+        p
+          'Проблема
+          a<> href="http://dev.stel.com/mtproto" title="Спецификация протокола MTProto" MTProto
+          'на сегодняшний день очевидна: им неудобно пользоваться с десктопа. Вы были в дороге, вы чатились со своими друзьями, пришли домой, они продолжают с вами переписываться, и вы вынуждены использовать телефон, чтобы им ответить. Хотя в домашних условиях переписываться с десктопа куда проще.
+        .panel
+          h3.subheader Мы решили, что нам, пользователям интернета, нужен мессенджер MTProto для Mac.
+        p
+          'Лично я,
+          a href="http://vk.com/sinodov" Юрий Синодов
+          ', готов оплатить труд разработчика, который создаст мессенджер, работающий на MTProto под Mac, и зальёт его в Mac App Store.
+    .row#social
+      .small-12.columns
+        ul.inline-list
+          li: #vk_like
+          li: .fb-like data-href="http://parcel.roem.ru" data-height="98" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-send="true"
+          li: .g-plusone data-size="medium" data-href="http://parcel.roem.ru"
+          li: a.twitter-share-button href="https://twitter.com/share" data-via="roemru" data-lang="ru" Твитнуть
+
+        javascript:
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+          VK.Widgets.Like("vk_like", {type: "button"});
+          window.___gcfg = {lang: 'ru'};
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+    .row#backup
+      .small-12.columns
+        .panel.callout
+          h1.subheader.text-centered
+            'На данный момент собрано:
+            strong<> 121&nbsp;000&nbsp;руб.
+        br
+        .section-container.vertical-tabs data-section="vertical-tabs"
+          section.active
+            p.title data-section-title="": a href="#yamoney": strong Яндекс.Деньги
+            .content.text-centered.overhidden data-section-content=""
+              br
+              iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/donate.xml?uid=4100132322391&amp;default-sum=1000&amp;targets=%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5+%D0%BC%D0%B5%D1%81%D1%81%D0%B5%D0%BD%D0%B4%D0%B6%D0%B5%D1%80%D0%B0+MTProto%2FTelegram+%D0%B4%D0%BB%D1%8F+Mac+OS+X&amp;target-visibility=on&amp;project-name=Parcel&amp;project-site=http%3A%2F%2Fparcel.roem.ru&amp;button-text=03&amp;hint=" width="450" height="131"
+          section
+            p.title data-section-title="": a href="#webmoney": strong WebMoney
+            .content.text-centered data-section-content=""
+              br
+              br
+              br
+              h4.subheader
+                'Сделайте перевод на счёт
+                strong R166029569733
+          section
+            p.title data-section-title="": a href="#paypal": strong PayPal
+            .content.text-centered data-section-content=""
+              br
+              br
+              br
+              form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"
+                input type="hidden" name="cmd" value="_donations"
+                input type="hidden" name="business" value="sinodov@roem.ru"
+                input type="hidden" name="lc" value="RU"
+                input type="hidden" name="item_name" value="parcel.roem.ru"
+                input type="hidden" name="no_note" value="0"
+                input type="hidden" name="currency_code" value="RUB"
+                input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest"
+                input type="image" src="https://www.paypalobjects.com/ru_RU/RU/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal — более безопасный и легкий способ оплаты через Интернет!"
+                img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"
+          section
+            p.title data-section-title="": a href="#other": strong Другие способы
+            .content.text-centered data-section-content=""
+              br
+              br
+              h4.subheader
+                'Контакты для связи:
+                strong Юрий Синодов
+                br
+                |(
+                a href="mailto:sinodov@roem.ru" sinodov@roem.ru
+                ', +7&nbsp;(926)&nbsp;886-98-83)
+
+    .row#how
+      .small-12.columns
+        h3.subheader Условия
+        p
+          'Это должен быть
+          strong в меру глючный мессенджер
+          '.
+        p Степень глючности буду определять я лично.
+        p Другие желающие спонсировать разработку мессенджера MTProto/Mac могут это сделать на следующих условиях.
+        ol
+          li Победителя конкурса определяю я, Юрий Синодов.
+          li Весь спонсорский взнос должен быть оплачен заранее.
+          li Если у вас есть дополнительные условия — вы можете организовать подконкурс с отдельным призовым фондом, мы напишем о нём.
+        .panel.callout
+          h3.subheader
+            |Контакты для связи: Юрий Синодов (
+            a href="mailto:sinodov@roem.ru" sinodov@roem.ru
+            ', +7 (926) 886-98-83)
+    .row#sponsors
+      .small-12.columns
+        h3.subheader Спонсоры
+        h5.subheader
+          strong<> 50 000 руб. –
+          a<> href="http://vk.com/sinodov" Юрий Синодов
+          '/ Главный редактор Roem.ru
+        h5.subheader
+          strong<> 30 000 руб. –
+          'Браузер
+          a<> href="http://orbitum.com/" Orbitum
+          '/ Отличный браузер для всех, кто хочет быть в тренде
+        h5.subheader
+          strong<> 30 000 руб. –
+          a<> href="http://vk.com/micro" Степан Коршаков (micro)
+          '/ Разработчик
+          a<> href="https://play.google.com/store/apps/details?id=org.telegram.android" Telegram
+          'и создатель
+          a<> href="http://mobiumapps.com/" Mobiumapps.com
+        h5.subheader
+          strong<> 10 000 руб. –
+          a<> href="http://vk.com/levmorozov" vk.com/levmorozov
+          '/ Разработчик ряда малоизвестных владимирских проектов
+        h5.subheader
+          strong<> 1 000 руб. –
+          a<> href="http://vk.com/phil" Евгений Трифонов
+          '/
+          a<> href="http://vk.com/gadgettake" vk.com/gadgettake
+          'и
+          a<> href="http://vk.com/appletake" vk.com/appletake
+    hr
+    footer.row
+      .large-6.small-12.columns: small.hide-for-small
+        '2013 ©
+        a href="mailto: sinodov@roem.ru" Юрий Синодов
+        br
+        'Сверстал
+        a href="http://kugaevsky.ru" Кугаевский
+      .large-6.small-12.columns: .right
+        ul.inline-list
+          li: a href="http://mandmac.tumblr.com/" Блог
+          li |
+          li: a href="http://roem.ru/" Roem.ru
+          li |
+          li: a href="#navigation" Наверх
+
+    script type="text/javascript" src="http://cdn.jsdelivr.net/foundation/4.3.2/js/vendor/zepto.min.js"
+    script type="text/javascript" src="http://cdn.jsdelivr.net/foundation/4.3.2/js/foundation.min.js"
+    javascript:
+      $(document).foundation();
+      (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter22481056 = new Ya.Metrika({id:22481056, clickmap:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+    noscript: div: img src="http://mc.yandex.ru/watch/22481056" style="position:absolute; left:-9999px;" alt=""
+
+
+
