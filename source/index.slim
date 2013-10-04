@@ -20,6 +20,9 @@ html lang="ru"
         text-align: center
       .overhidden
         overflow: hidden
+      .alert-box ol
+        margin-left: 1.75em
+        margin-bottom: 0
   body
     script type="text/javascript" src="http://vk.com/js/api/openapi.js?101"
     #fb-root
@@ -95,8 +98,7 @@ html lang="ru"
         .panel.callout
           h1.subheader.text-centered
             'На данный момент собрано:
-            strong<> 127&nbsp;013&nbsp;руб.
-        br
+            strong<> 153&nbsp;311&nbsp;руб.
         .section-container.vertical-tabs data-section="vertical-tabs"
           section.active
             p.title data-section-title="": a href="#yamoney": strong Яндекс.Деньги
@@ -140,7 +142,11 @@ html lang="ru"
                 |(
                 a href="mailto:sinodov@roem.ru" sinodov@roem.ru
                 ', +7&nbsp;(926)&nbsp;886-98-83)
-          small Комиссии платёжных систем будут учтены при определении итогового размера призового фонда
+          br
+          .alert-box
+            ol
+              li Пожалуйста, укажите свои данные в комментариях к платежу, если хотите попасть в раздел «Спонсоры».
+              li Комиссии платёжных систем будут учтены при определении итогового размера призового фонда.
 
     .row#how
       .small-12.columns
@@ -181,8 +187,12 @@ html lang="ru"
           a<> href="http://mobiumapps.com/" Mobiumapps.com
         h5.subheader
           strong<> 10 000 руб. –
-          a<> href="http://vk.com/levmorozov" vk.com/levmorozov
+          a<> href="http://vk.com/levmorozov" Лев Морозов
           '/ Разработчик ряда малоизвестных владимирских проектов
+        h5.subheader
+          strong<> 3 000 руб. –
+          a<> href="http://webit.ru" Digital агентство webit
+          '/ Повышаем продажи клиентов уже 10 лет
         h5.subheader
           strong<> 3 000 руб. –
           a<> href="http://vk.com/lipin" Николай Липин
@@ -194,6 +204,10 @@ html lang="ru"
           '/ Директор
           a href="http://infoculture.ru/" НП "Инфокультура"
         h5.subheader
+          strong<> 2 000 руб. –
+          'Константин Панфилов /
+          a<> href="http://www.siliconrus.com/" Цукерберг позвонит
+        h5.subheader
           strong<> 1 000 руб. –
           a<> href="http://vk.com/phil" Евгений Трифонов
           '/
@@ -201,11 +215,11 @@ html lang="ru"
           'и
           a<> href="http://vk.com/appletake" vk.com/appletake
         h5.subheader
-          strong<> 1 000 руб. –
+          strong<> 21 298 руб. –
           a<> href="" Alter Ego
           '/ Анонимные спонсоры (пожалуйста, напишите на
           a href="mailto:sinodov@roem.ru" sinodov@roem.ru
-          |, если вы хотите, чтобы ваш существенный вклад был деанонимизирован
+          |, если вы хотите, чтобы ваш существенный вклад был деанонимизирован)
     br
     .row#disqus
       .small-12.columns
