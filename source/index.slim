@@ -23,6 +23,13 @@ html lang="ru"
       .alert-box ol
         margin-left: 1.75em
         margin-bottom: 0
+      .alert-box a,
+      .callout a
+        color: white
+        text-decoration: underline
+        &:hover
+          color: yellow
+
   body
     script type="text/javascript" src="http://vk.com/js/api/openapi.js?101"
     #fb-root
@@ -98,7 +105,7 @@ html lang="ru"
         .panel.callout
           h1.subheader.text-centered
             'На данный момент собрано:
-            strong<> 153&nbsp;311&nbsp;руб.
+            strong<> 183&nbsp;820&nbsp;руб.
         .section-container.vertical-tabs data-section="vertical-tabs"
           section.active
             p.title data-section-title="": a href="#yamoney": strong Яндекс.Деньги
@@ -145,7 +152,10 @@ html lang="ru"
           br
           .alert-box
             ol
-              li Пожалуйста, укажите свои данные в комментариях к платежу, если хотите попасть в раздел «Спонсоры».
+              li
+                'Пожалуйста, укажите свои данные в комментариях к платежу или
+                a href="https://docs.google.com/a/roem.ru/forms/d/16P9C5-SQeDto_DkJkSC9QHsmg_n0VLbdeLDMSfyLpjE/viewform" заполните форму
+                |, если хотите попасть в раздел «Спонсоры».
               li Комиссии платёжных систем будут учтены при определении итогового размера призового фонда.
 
     .row#how
@@ -186,9 +196,21 @@ html lang="ru"
           'и создатель
           a<> href="http://mobiumapps.com/" Mobiumapps.com
         h5.subheader
+          strong<> 20 000 руб. –
+          'Браузер
+          a<> href="http://adivohost.ru/" Adivohost
+          '/ Хостинг выделенных и виртуальных серверов за рубежом с круглосуточной техподдержкой
+        h5.subheader
           strong<> 10 000 руб. –
           a<> href="http://vk.com/levmorozov" Лев Морозов
           '/ Разработчик ряда малоизвестных владимирских проектов
+        h5.subheader
+          strong<> 10 000 руб. –
+          'Ксения Рыжкова из Санкт-Петербурга
+        h5.subheader
+          strong<> 3 333 руб. –
+          a<> href="http://disqus.com/disqus_ufb6hOCg2j/" Илья
+          'из комментариев
         h5.subheader
           strong<> 3 000 руб. –
           a<> href="http://webit.ru" Digital агентство webit
@@ -208,6 +230,10 @@ html lang="ru"
           'Константин Панфилов /
           a<> href="http://www.siliconrus.com/" Цукерберг позвонит
         h5.subheader
+          strong<> 1 100 руб. –
+          'Карпенко Павел / Руководитель проекта
+          a<> href="http://datahouse.ru/" Datahouse.ru
+        h5.subheader
           strong<> 1 000 руб. –
           a<> href="http://vk.com/phil" Евгений Трифонов
           '/
@@ -215,10 +241,17 @@ html lang="ru"
           'и
           a<> href="http://vk.com/appletake" vk.com/appletake
         h5.subheader
-          strong<> 21 298 руб. –
+          strong<> 1 000 руб. –
+          'Антон Бородин /
+          a<> href="http://lingoware.ru" Бюро переводов
+          'Lingoware / Руководитель проекта
+        h5.subheader
+          strong<> 17 374 руб. –
           a<> href="" Alter Ego
           '/ Анонимные спонсоры (пожалуйста, напишите на
-          a href="mailto:sinodov@roem.ru" sinodov@roem.ru
+          a> href="mailto:sinodov@roem.ru" sinodov@roem.ru
+          'или
+          a href="https://docs.google.com/a/roem.ru/forms/d/16P9C5-SQeDto_DkJkSC9QHsmg_n0VLbdeLDMSfyLpjE/viewform" заполните форму
           |, если вы хотите, чтобы ваш существенный вклад был деанонимизирован)
     br
     .row#disqus
